@@ -2,7 +2,9 @@ import {Links} from "./modules/links.js"
 
 //what are YOU looking at
 
-document.getElementById("UserAgent").innerText = navigator.userAgent;
+const UserAgentText = document.getElementById("UserAgent")
+
+UserAgentText.innerText = navigator.userAgent;
 if (navigator.userAgent == "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15" || window.location.hostname === "127.0.0.1"){
     document.getElementById("text1").innerText = "You cool twin"
     Object.entries(Links).forEach(([key, value]) => {
@@ -18,6 +20,6 @@ if (navigator.userAgent == "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Appl
 });
 }else{
     document.getElementById("text1").innerText = "404 Site Not Found"
-    document.getElementById("UserAgent").innerText = ""
+    UserAgentText.innerText = ""
 }
 console.log("Hi");

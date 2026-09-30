@@ -5,5 +5,6 @@ export const Links = {
     "Proxyium": "https://proxyium.com",
     "Eaglercraft": "html/minecraft.html",
     "Youtube": "https://youtube.com",
-    "Instagram": "https://instagram.com"
+    "Instagram": "https://instagram.com",
+    "Pro Evolution Soccer": "https://pes6.optijuegos.net/"
 }
